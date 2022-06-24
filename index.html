@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style> 
+        @font-face {
+            font-family: "netflix-font";
+            src: url(NetflixSans-Regular.otf);
+        }
+        *{  box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            width:600px;
+            height:550px;
+        }
+        body{
+            font-family: "netflix-font";
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            color: rgb(226, 222, 222)
+        }
+        .top{
+            width:600px;
+            height:65%;
+            box-shadow: inset 0px -50px 18px -1px #000000; 
+            box-shadow: inset 0px -100px 80px -1px rgb(26, 25, 25);
+            background-image:url(./assets/FluxoEMPI.jpg);
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        .div-btns {
+            display:flex;
+            flex-direction: row;
+        }
+        .bottom{
+            width: 100%;
+            height:35%;
+            background-color: rgb(26, 25, 25);
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .left{
+            width: 65%;
+            height:100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: fl;
+            align-items: flex-start;
+        }
+        .right{
+            width: 35%;
+            height: 100%;
+            padding: 10px;
+        }
+        #play{
+            background-image: url(./assets/play.svg);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 20px 20px;
+            height: 35px;
+            width: 100px;
+            border-radius: 4px;
+            border: none;
+            padding: 3px 0 3px 25px;
+        }
+        .redondo{
+            width:35px;
+            height:35px;
+            border-radius: 30px;
+            border:1px solid grey;
+            background-color: rgba(53, 51, 51, 0.767);
+            margin: 0 5px;
+
+        }
+        .plus{
+            background-image: url(./assets/plus.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .like{
+            background-image: url(./assets/like.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        .close{
+            background-image: url(./assets/x.svg);
+            background-color: rgba(0, 0, 0, 0.733);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative; top: -315px; right: -330px;
+        }
+        .mute{
+            background-image: url(./assets/mute.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative; right: -280px;
+            bottom: 48px;
+        }
+
+        .play-margin{
+            margin-left: 28px;
+        }
+
+        .redondo-margin {
+            
+            margin-top: -50px;
+        }
+        .relevante{
+            color: rgb(18, 75, 18);
+            margin: 0 10px;
+        }
+        .info{
+            color: rgb(87, 85, 85);
+        }
+        p{
+            font-size: 12px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            text-align: left;
+        }
+        .hd{
+            font-size: 16px;
+        }
+        h5{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h4{
+            margin-bottom: 10px;
+            font-size: 13px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        </style>
+    
+
+    </head>
+    <body>
+        <div id="container">
+            <div class="top">
+                <img src="./assets/LogoFluxo.png" height="200px" width="200px"/>
+                <div class="div-btns">
+                    <button id="play" class="play-margin redondo-margin"> Entrar</button>
+                    <button class="redondo plus redondo-margin"></button>
+                    <button class="redondo like redondo-margin"></button>
+                    <button class="redondo close"></button>
+                    <button class="redondo mute"></button>
+                </div>
+            
+
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <h5><span class="relevante">100% relevante</span> &nbsp<img src="./assets/livre.png"width="20px"/> &nbsp <span>1993</span> &nbsp<span>29 anos</span29> &nbsp <span class="hd">HD</span></h5>
+                    <h4><img src="./assets/top1.png" width="16px"/> Top 1 empresas júnior do Brasil</h4>
+                    <p>O processo até aqui tem sido uma grande oportunidade de aprendizado e crescimento. As etapas da dinâmica e da entrevista foram muito agregadoras para meu desenvolvimento pessoal e o período trainee têm sido ótimo para desenvolver novas habilidades e obter conhecimentos práticos não vistos em sala de aula.</p>
+
+                </div>
+                <div class="right">
+                    <p><span class="info">Elenco:</span> Antônio Falcão, Vitor Diniz, Karolinne Oliveira <i> e mais</i></p>
+                    <p><span class="info">Gêneros:</span> Engenharias, Química Industrial, Arquitetura e Urbanismo, e Comunicação Visual</p>
+
+
+                </div>
+
+            </div>
+
+    </body>
+</html>
